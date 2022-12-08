@@ -65,8 +65,8 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class(name: str) -> str:
-    approve_choice: str = None
-    char_class: str = None
+    approve_choice: str =None
+    char_class: str =None
     while approve_choice != 'y':
         char_class = input('Введи название персонажа,'
                            'за которого хочешь играть: '
@@ -99,5 +99,6 @@ def main():
     char_class: str = choice_char_class()
     print(start_training(char_name, char_class))
 
-    
+
+
 main()
